@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+$lato: 'Lato', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$opensans: 'Open Sans', sans-serif;
+$kaushan:'Kaushan Script', cursive;
+$montserrat:'Montserrat', sans-serif;
+
+//colors
+$gray_1: #d6d3d3;
+$gray_2: #282828;
+$gray_3: #454545;
+$gray_4: #161616;
+$gray_5: #f4f4f4;
+
+$orange: #f7b519;
+
+//sizes
+$size_xs: 425px;
+
+//tmp selectors
+%wr{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+%ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin media($size){
+  @media (max-width: $size) {
+    @content;
+  }
+}

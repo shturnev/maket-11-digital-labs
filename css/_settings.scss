@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import "font", "vars";
+
+html,body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  font-family: $opensans;
+  font-size: 14px;
+}
+
+.wr{
+  @extend %wr;
+
+  @include media($size_xs){
+    padding-left: 10px;
+    padding-right: 10px;
+
+  }
+
+}
+.orange-btn{
+  display: inline-block;
+  text-decoration: none;
+  padding: 16px 21px;
+  background:$orange;
+  color: $gray_3;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 1px;
+
+  &:hover{
+    color: white;
+    background: darken($orange, 5%);
+  }
+
+}
